@@ -4,9 +4,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
 
-import HomeScreen from '../screens/HomeScreen'
-import FindScreen from '../screens/FindScreen'
-import PostScreen from '../screens/PostScreen'
+import HomeScreen from './HomeScreen'
+import FindScreen from './FindScreen'
+import PostScreen from './PostScreen'
 
 const Tab = createBottomTabNavigator()
 const Tabs = () => {
@@ -32,7 +32,7 @@ const Tabs = () => {
         tabBarIcon: ({focused}) => (
             <View style={{alignItems: 'center', justifyContent: 'center', top: 10}}>
                 <Image
-                source={require('../assets/wine.png')}
+                source={require('./assets/wine.png')}
                 resizeMode='contain'
                 style={{
                     width: 25,
@@ -52,7 +52,7 @@ const Tabs = () => {
         tabBarIcon: ({focused}) => (
             <View style={{alignItems: 'center', justifyContent: 'center', top: 10}}>
                 <Image
-                source={require('../assets/star.png')}
+                source={require('./assets/star.png')}
                 resizeMode='contain'
                 style={{
                     width: 25,
@@ -74,7 +74,7 @@ const Tabs = () => {
         tabBarIcon: ({focused}) => (
             <View style={{alignItems: 'center', justifyContent: 'center', top: 10}}>
                 <Image
-                source={require('../assets/map.png')}
+                source={require('./assets/map.png')}
                 resizeMode='contain'
                 style={{
                     width: 25,

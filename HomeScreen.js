@@ -1,9 +1,9 @@
 import React from 'react';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation' ;
 import { createBottomTabNavigator } from 'react-navigation-tabs'
-import MapScreen from '../src/screen/MapScreen';
-import MapListScreen  from '../src/screen/MapListScreen'
-import { setNavigator } from '../src/navigationRef'
+import MapScreen from './MapScreen';
+import MapListScreen  from './MapListScreen'
+import { setNavigator } from './navigationRef'
 
 const switchNavigator = createSwitchNavigator({
   mainFlow: createBottomTabNavigator({

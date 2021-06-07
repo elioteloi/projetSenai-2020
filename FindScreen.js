@@ -10,7 +10,7 @@ import {
   TextInput,
   Image
 } from 'react-native'
-import Rating from '../components/Rating'
+import Rating from './Rating'
 const DATA = [
   {id: 1, text: ' joao, Metal, (48)XXXXXX'},
   {id: 2, text: ' maria, MPB, (48)XXXXXX'},
@@ -56,7 +56,7 @@ const App = () => {
       style={styles.item}
       onPress={() =>onPressItem(item)}
       >
-        <Image source={require("../assets/people.png")}  style={{height:50, width:50, padding: 10,}}/>
+        <Image source={require("./assets/people.png")}  style={{height:50, width:50, padding: 10,}}/>
           <Text style={styles.text}>{item.text}</Text>
           <Rating  style={styles.rating} rating={1} numStars={5} starColor='black'/>
       </TouchableOpacity>

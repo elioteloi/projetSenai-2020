@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavigationContainer, navigationContainer } from '@react-navigation/native';
-import Tabs from './navigation/tabs';
+import Tabs from './tabs';
 const App = () => {
     return(
       <NavigationContainer>
