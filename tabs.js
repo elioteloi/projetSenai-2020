@@ -42,7 +42,7 @@ const Tabs = () => {
 
                 />
                 <Text style={{color: focused ? 'black' : '#748c94', fontSize: 12}}>
-                    POST
+                    Evento
                 </Text>
             </View>
         ),
@@ -62,7 +62,7 @@ const Tabs = () => {
 
                 />
                 <Text style={{color: focused ? 'black' : '#748c94', fontSize: 12}}>
-                    RATING
+                    Banda
                 </Text>
             </View>
         ),
@@ -84,7 +84,7 @@ const Tabs = () => {
 
                 />
                 <Text style={{color: focused ? 'black' : '#748c94', fontSize: 12}}>
-                    MAP
+                    Mapa
                 </Text>
             </View>
         ),

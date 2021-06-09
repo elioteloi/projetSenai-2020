@@ -1,5 +1,6 @@
+
 import React, {useState} from 'react';
-import { KeyboardAvoidingView, StyleSheet, Text, View, TextInput, TouchableOpacity, Keyboard, ScrollView, Platform } from 'react-native';
+import { KeyboardAvoidingView, StyleSheet, Text, View, TextInput, TouchableOpacity, Keyboard, ScrollView } from 'react-native';
 import Task from './Task';
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      
       <ScrollView
         contentContainerStyle={{
           flexGrow: 1
@@ -29,7 +31,7 @@ export default function App() {
 
       
       <View style={styles.tasksWrapper}>
-        <Text style={styles.sectionTitle}>Today's tasks</Text>
+        <Text style={styles.sectionTitle}>Criar evento !</Text>
         <View style={styles.items}>
           
           {
@@ -48,10 +50,10 @@ export default function App() {
 
       
       <KeyboardAvoidingView 
-        behavior={Platform.OS === 'web' ? "padding" : "height"}
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
         style={styles.writeTaskWrapper}
       >
-        <TextInput style={styles.input} placeholder={'escreve algo '} value={task} onChangeText={text => setTask(text)} />
+        <TextInput style={styles.input} placeholder={'escrever algo'} value={task} onChangeText={text => setTask(text)} />
         <TouchableOpacity onPress={() => handleAddTask()}>
           <View style={styles.addWrapper}>
             <Text style={styles.addText}>+</Text>
@@ -66,7 +68,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: '#E8EAED',
   },
   tasksWrapper: {
     paddingTop: 80,
@@ -81,7 +83,7 @@ const styles = StyleSheet.create({
   },
   writeTaskWrapper: {
     position: 'absolute',
-    bottom: 140,
+    bottom: 160,
     width: '100%',
     flexDirection: 'row',
     justifyContent: 'space-around',
@@ -92,111 +94,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     backgroundColor: '#FFF',
     borderRadius: 60,
-    borderColor: 'black',
+    borderColor: '#C0C0C0',
     borderWidth: 1,
     width: 250,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
   },
   addWrapper: {
     width: 60,
@@ -205,7 +105,7 @@ const styles = StyleSheet.create({
     borderRadius: 60,
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: 'black',
+    borderColor: '#C0C0C0',
     borderWidth: 1,
   },
   addText: {},

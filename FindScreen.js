@@ -108,7 +108,7 @@ const App = () => {
          onPress={() => onPressSaveEdit()}
          style={styles.touchableSave}
         >
-          <Text style={styles.text}>Save</Text>
+          <Text style={styles.text}>Salvar</Text>
 
         </TouchableOpacity>
      </View>
